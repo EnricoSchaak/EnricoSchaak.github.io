@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #8d1cf7;
+  --accent-color: #fc0db0;
+  --background-color: #121212;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -37,14 +43,13 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1.2em;
-    font: comic;
     text-align: center;
   }
    
   .hero-text h1 {
     font-size: 2.5em;
     margin-top: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
    
   .hero-text h2 {
@@ -58,10 +63,10 @@ body {
     margin: 2rem;
     padding: 1rem;
     border-radius: 15px;
-    width: 40ch;
+    width: 45ch;
   }
 
-  .hero-text p::before {
+  .hero-text p::before { 
     content: "“";
     color: #fc0db0;
     font-size: 2em;
@@ -89,3 +94,47 @@ body {
     width: 100%;
   }
 
+  section.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+section.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: : 5rem;
+  justify-content: center;
+}
+
+section.skills ul li {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+section.skills ul li .skill-shadow {
+  background-color: rgba(100, 100, 100, 0.7);
+  border-radius: 1rem;
+}
+
+section.skills ul li .skill-bar {
+  background-color: red;
+  border-radius: 1rem;
+  width: 90%;
+  font-style: italic;
+  padding: 1rem 0;
+  font-size: 1.3em;
+}
+
+.skill-bar span.value {
+  margin-left: 1rem;
+}
+
+.skill-bar span.value::after {
+  content: " %"
+}
