@@ -279,12 +279,12 @@ ul.timeline-items .timeline-date {
   }
    
   section.projects ul li {
-    border: 1px solid white;
+    border: 1px solid rgb(49, 18, 18);
     max-width: 400px;
     min-width: 200px;
-    background-color: var(--accent-color);
+    background-color: black;
     border-radius: 1rem;
-    box-shadow: 4px 4px 10px var(--accent-color);
+    box-shadow: 4px 4px 10px grey;
   }
    
   section.projects ul li img {
@@ -306,9 +306,9 @@ section.projects ul  li  button {
   margin-left: 0.5rem;
   border-radius: 1rem;
   padding: 0.8rem;
-  background-color: var(--primary-color);
+  background-color: rgb(19, 17, 17);
   font-size: 1.1em;
   font-weight: 700;
-  color: white;
+  color: rgb(49, 18, 18);
   text-shadow:0 0 4px black;
 }
