@@ -175,6 +175,7 @@ section.skills ul li .skill-bar {
   content: " %"
 }
 
+
 section.timeline {
   display: flex;
   flex-direction: column;
@@ -254,7 +255,7 @@ ul.timeline-items .timeline-date {
   .timeline-content h3 {
     font-size: 20px;
     font-weight: 700;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
   }
 
   .timeline-content p {
@@ -285,6 +286,7 @@ ul.timeline-items .timeline-date {
     background-color: black;
     border-radius: 1rem;
     box-shadow: 4px 4px 10px grey;
+    transition: ease 0.3s;
   }
    
   section.projects ul li img {
@@ -301,7 +303,9 @@ ul.timeline-items .timeline-date {
       margin: 0 1rem 0.5rem 1rem;
     } 
 
-section.projects ul  li  button {
+section.projects ul  li  a {
+  display: inline-block;
+  text-decoration: none;
   margin-bottom: 1rem;
   margin-left: 0.5rem;
   border-radius: 1rem;
@@ -311,4 +315,37 @@ section.projects ul  li  button {
   font-weight: 700;
   color: rgb(49, 18, 18);
   text-shadow:0 0 4px black;
+  box-shadow: 2px 2px 6px #121212;
+}
+
+section.projects ul li:hover {
+  box-shadow: 6px 6px 20px var(--primary-color);
+  transform: translateY(-1rem) translateX(0.5rem);
+}
+
+/* Media-Queries*/
+
+@media screen and (max-width: 900px) {
+  section.skills ul {
+  gap: 1rem;
+  transform: scale(0.8);
+  }
+  section.skills ul li {
+  width: 80%;
+  }
+  section.timeline {
+    padding: 0.6rem;
+  }
+  section.timeline h2.timeline-title {
+    margin: 0;
+  }
+  section.timeline ul.timeline-items {
+  max-width: fit-content;
+  }
+  .timeline-content p {
+    max-width: 30vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
